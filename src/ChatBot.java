@@ -9,6 +9,10 @@ public class ChatBot {
      1. we need to figure out how we can process the request
        --
      */
+
+    public void fetch(){
+
+    }
     public void response(String request){
 
     }
