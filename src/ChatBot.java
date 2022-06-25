@@ -13,8 +13,14 @@ public class ChatBot {
      */
 
     public void checkDatabase(int c, int d, String file){
-        new datas().fetch(c,d,file);
+
+        String[][]data = new datas().fetch(c,d,file);
+        for (int i = 0; i < c; i++)
+            for (int j = 0; j < d; j++)
+                System.out.println("arr[" + i + "][" + j + "] = " + data[i][j]);
     }
+
+
     public void response(String request,int c, int d, String file){
         boolean match = false;
         String placeholder = "no match! try again later!";
