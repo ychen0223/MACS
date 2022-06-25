@@ -10,13 +10,17 @@ public class Main {
         ChatBot MACS = new ChatBot();
         String NewMessage = "I am happy";
 
-        String file = "src//dataset.csv";
-        int c =3; //row
-        int d = 2;//column
-        System.out.println("input message is: " + NewMessage);
-        MACS.checkDatabase(c,d,file);
-        MACS.response(NewMessage,c,d,file);
-
-        System.out.println("chatbot name is " + MACS.name);
+        //String file = "src//dataset.csv";
+        //int c =3; //row
+        //int d = 2;//column
+        //System.out.println("input message is: " + NewMessage);
+        //MACS.checkDatabase(c,d,file);
+        //MACS.response(NewMessage,c,d,file);
+        new anger().checkDatabase();
+        anger Ang = new anger();
+        Ang.checkDatabase();
+        Ang.fetch();
+        Ang.checkDatabase();
+        //System.out.println("chatbot name is " + MACS.name);
     }
 }
